@@ -9,7 +9,7 @@ public class MoodAnalyserTest {
 
 
     @Test
-    public void testMoodAnalyser() {
+    public void testMoodAnalyser() throws MoodAnalysisException{
         Scanner scanner= new Scanner(System.in);
         System.out.println("Enter how you feel");
         String mood_generator =null;

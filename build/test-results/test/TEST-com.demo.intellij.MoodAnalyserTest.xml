@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.demo.intellij.MoodAnalyserTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-07T12:05:54" hostname="LAPTOP-OULI8K5P" time="0.007">
+<testsuite name="com.demo.intellij.MoodAnalyserTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-07T12:24:32" hostname="LAPTOP-OULI8K5P" time="0.008">
   <properties/>
-  <testcase name="testMoodAnalyser" classname="com.demo.intellij.MoodAnalyserTest" time="0.007"/>
+  <testcase name="testMoodAnalyser" classname="com.demo.intellij.MoodAnalyserTest" time="0.008"/>
   <system-out><![CDATA[Enter how you feel
+User entered null
+Mood was Empty
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
