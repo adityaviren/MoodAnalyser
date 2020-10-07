@@ -1,9 +1,17 @@
 package com.demo.intellij;
 
-import java.util.regex.Pattern;
-
 public class MoodAnalyser {
-    public String analyseMood(String message) {
+
+    public String message;
+
+    MoodAnalyser(){
+
+    }
+    MoodAnalyser(String message) {
+        this.message=message;
+    }
+
+    public String analyseMood() {
         if (message.contains("sad")) {
             return "SAD";
         } else

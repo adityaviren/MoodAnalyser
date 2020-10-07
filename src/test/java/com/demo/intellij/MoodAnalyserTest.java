@@ -5,27 +5,15 @@ import org.junit.Assert;
 import org.junit.Test;
 
 public class MoodAnalyserTest {
-    /*@Test
-    public void testMoodAnalyser() throws Exception {
-        MoodAnalyser moodAnalyser = new MoodAnalyser();
-        String mood = moodAnalyser.analyseMood(null);
 
-        Assert.assertThat(mood, CoreMatchers.is("SAD"));
-    }*/
+
     @Test
-    public void given2Numbers_whenAdded_shouldReturnSum() {
-        MoodAnalyser calculator = new MoodAnalyser();
-        int addition = calculator.addition(3, 3);
-        Assert.assertEquals(6,addition);
+    public void testMoodAnalyser(){
+        MoodAnalyser moodAnalyser = new MoodAnalyser("This is a sad message");
+        String mood1 = moodAnalyser.analyseMood();
+        Assert.assertThat(mood1, CoreMatchers.is("SAD"));
+        MoodAnalyser moodAnalyse = new MoodAnalyser("This is a happy message");
+        String mood2 = moodAnalyse.analyseMood();
+        Assert.assertThat(mood2, CoreMatchers.is("HAPPY"));
     }
-    @Test
-    public void givenName_whenValid_shouldReturnTrue() {
-
-        MoodAnalyser moodAnalyser = new MoodAnalyser();
-        Boolean result = moodAnalyser.firstName("Aditya");
-        Assert.assertTrue(result);
-    }
-
 }
-
-
