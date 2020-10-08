@@ -12,15 +12,17 @@ public class MoodAnalyser {
         this.message=message;
     }
 
-    public String analyseMood(){
+    public String analyseMood() throws MoodAnalysisException{
         moodEnum mood = moodEnum.NonEmpty;
         try {
-            if (message.contains("sad"))
+            if (message==null)
+                throw new MoodAnalysisException();
+            else if(message.contains("sad"))
                 return "SAD";
             else
                 return "HAPPY";
         }
-        catch (Exception e){
+        catch (MoodAnalysisException e){
             System.out.println("User entered null");
             mood = moodEnum.Empty;
             return "HAPPY";
