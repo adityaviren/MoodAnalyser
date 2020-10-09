@@ -12,7 +12,7 @@ public class MoodAnalyser {
         this.message=message;
     }
 
-    public String analyseMood() throws MoodAnalysisException{
+    public String analyseMood() {
         moodEnum mood = moodEnum.NonEmpty;
         try {
             if (message==null)

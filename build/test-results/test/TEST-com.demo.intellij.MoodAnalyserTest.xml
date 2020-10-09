@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.demo.intellij.MoodAnalyserTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-08T03:21:10" hostname="LAPTOP-OULI8K5P" time="0.009">
+<testsuite name="com.demo.intellij.MoodAnalyserTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-08T03:25:20" hostname="LAPTOP-OULI8K5P" time="0.007">
   <properties/>
-  <testcase name="testMoodAnalyser" classname="com.demo.intellij.MoodAnalyserTest" time="0.009"/>
+  <testcase name="testMoodAnalyser" classname="com.demo.intellij.MoodAnalyserTest" time="0.007"/>
   <system-out><![CDATA[Enter how you feel
 User entered null
 Mood was Empty
